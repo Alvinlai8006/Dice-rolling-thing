@@ -75,14 +75,14 @@
   </style>
 </head>
 <body>
-  <h1>Dice Roller Game</h1>
+  <h1>Dice Roller</h1>
   <div id="players">
-    <div class="player-entry"><input type="text" placeholder="Player 1 (dark grey)" /><label><input type="checkbox" checked /> Active</label></div>
-    <div class="player-entry"><input type="text" placeholder="Player 2 (yellow)" /><label><input type="checkbox" checked /> Active</label></div>
-    <div class="player-entry"><input type="text" placeholder="Player 3 (blue)" /><label><input type="checkbox" checked /> Active</label></div>
-    <div class="player-entry"><input type="text" placeholder="Player 4 (green)" /><label><input type="checkbox" checked /> Active</label></div>
-    <div class="player-entry"><input type="text" placeholder="Player 5 (light grey)" /><label><input type="checkbox" checked /> Active</label></div>
-    <div class="player-entry"><input type="text" placeholder="Player 6 (red)" /><label><input type="checkbox" checked /> Active</label></div>
+    <div class="player-entry"><input type="text" placeholder="Player 1 (dark grey)" /><label><input type="checkbox" checked /> Playing?</label></div>
+    <div class="player-entry"><input type="text" placeholder="Player 2 (yellow)" /><label><input type="checkbox" checked /> Playing?</label></div>
+    <div class="player-entry"><input type="text" placeholder="Player 3 (blue)" /><label><input type="checkbox" checked /> Playing?</label></div>
+    <div class="player-entry"><input type="text" placeholder="Player 4 (green)" /><label><input type="checkbox" checked /> Playing?</label></div>
+    <div class="player-entry"><input type="text" placeholder="Player 5 (light grey)" /><label><input type="checkbox" checked /> Playing?</label></div>
+    <div class="player-entry"><input type="text" placeholder="Player 6 (red)" /><label><input type="checkbox" checked /> Playing?</label></div>
   </div>
   <button onclick="startGame()">Start Rolling!</button>
   <div id="game" style="display:none;">
@@ -94,7 +94,7 @@
 
   <audio id="diceSound" preload="auto">
     <source src="https://actions.google.com/sounds/v1/cartoon/wood_plank_flicks.ogg" type="audio/ogg">
-    Your browser does not support the audio element.
+    Your browser doesn't work! Use superior chrome!
   </audio>
 
   <script>
@@ -120,7 +120,7 @@
       });
 
       if (players.length === 0) {
-        alert("Please select at least one active player.");
+        alert("Please select at least two active player.");
         return;
       }
 
