@@ -77,14 +77,14 @@
 <body>
   <h1>Dice Roller Game</h1>
   <div id="players">
-    <div class="player-entry"><input type="text" placeholder="Player 1" /><label><input type="checkbox" checked /> Active</label></div>
-    <div class="player-entry"><input type="text" placeholder="Player 2" /><label><input type="checkbox" checked /> Active</label></div>
-    <div class="player-entry"><input type="text" placeholder="Player 3" /><label><input type="checkbox" checked /> Active</label></div>
-    <div class="player-entry"><input type="text" placeholder="Player 4" /><label><input type="checkbox" checked /> Active</label></div>
-    <div class="player-entry"><input type="text" placeholder="Player 5" /><label><input type="checkbox" checked /> Active</label></div>
-    <div class="player-entry"><input type="text" placeholder="Player 6" /><label><input type="checkbox" checked /> Active</label></div>
+    <div class="player-entry"><input type="text" placeholder="Player 1 (dark grey)" /><label><input type="checkbox" checked /> Active</label></div>
+    <div class="player-entry"><input type="text" placeholder="Player 2 (yellow)" /><label><input type="checkbox" checked /> Active</label></div>
+    <div class="player-entry"><input type="text" placeholder="Player 3 (blue)" /><label><input type="checkbox" checked /> Active</label></div>
+    <div class="player-entry"><input type="text" placeholder="Player 4 (green)" /><label><input type="checkbox" checked /> Active</label></div>
+    <div class="player-entry"><input type="text" placeholder="Player 5 (light grey)" /><label><input type="checkbox" checked /> Active</label></div>
+    <div class="player-entry"><input type="text" placeholder="Player 6 (red)" /><label><input type="checkbox" checked /> Active</label></div>
   </div>
-  <button onclick="startGame()">Start Game</button>
+  <button onclick="startGame()">Start Rolling!</button>
   <div id="game" style="display:none;">
     <div class="player-turn" id="currentPlayer"></div>
     <button onclick="rollDice()">Roll Dice</button>
