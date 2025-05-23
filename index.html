@@ -120,7 +120,7 @@
       });
 
       if (players.length === 0) {
-        alert("Please select at least two active player.");
+        alert("Please select at least two active player. OR ELSE");
         return;
       }
 
@@ -161,7 +161,7 @@
     }
 
     function updateCurrentPlayer() {
-      document.getElementById('currentPlayer').textContent = `It's ${players[currentPlayerIndex]}'s turn. (took a BIT too long making this)`;
+      document.getElementById('currentPlayer').textContent = `It's ${players[currentPlayerIndex]}'s turn.`;
     }
   </script>
 </body>
