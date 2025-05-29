@@ -84,7 +84,7 @@
     <div class="player-entry"><input type="text" placeholder="Player 5 (light grey)" /><label><input type="checkbox" checked /> Playing?</label></div>
     <div class="player-entry"><input type="text" placeholder="Player 6 (red)" /><label><input type="checkbox" checked /> Playing?</label></div>
   </div>
-  <button onclick="startGame()">Start Rolling!</button>
+  <button onclick="startGame()">Roll Dice</button>
   <div id="game" style="display:none;">
     <div class="player-turn" id="currentPlayer"></div>
     <button onclick="rollDice()">Roll Dice</button>
@@ -94,7 +94,7 @@
 
   <audio id="diceSound" preload="auto">
     <source src="https://actions.google.com/sounds/v1/cartoon/wood_plank_flicks.ogg" type="audio/ogg">
-    Your browser doesn't work! Use superior chrome!
+    Your browser doesn't work! Use superior Chrome, its way better than Safari! (Maybe true)
   </audio>
 
   <script>
@@ -120,7 +120,7 @@
       });
 
       if (players.length === 0) {
-        alert("Please select at least two active player. OR ELSE");
+        alert("Please select at least two active player. OR YOURE DONE");
         return;
       }
 
